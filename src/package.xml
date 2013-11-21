@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chatterグラフ</fullName>
+    <types>
+        <members>ChatterGraphJSController</members>
+        <members>ChatterGraphJSControllerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ChatterGraph</members>
+        <members>ChatterGraphFrame</members>
+        <members>chatter_graph_css</members>
+        <members>chatter_graph_js</members>
+        <members>chatter_graph_json</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Chatter_Graph</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Chatter_Graph</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>excanvas_js</members>
+        <members>jit_yc_js</members>
+        <name>StaticResource</name>
+    </types>
+    <version>28.0</version>
+</Package>
