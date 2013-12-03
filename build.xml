@@ -1,12 +1,11 @@
-<project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sfc="antlib:com.yutagithub.sforce.ci">
+<project name="Sample usage of Salesforce-CI Ant tasks" default="test" basedir="." xmlns:sfc="antlib:com.yutagithub.sforce.ci">
 
-    <property file="build.properties"/>
-    <property environment="env"/>
+  <property file="build.properties" />
+    <property environment="env" />
+
+    <!-- Build / TestResult never actually saves to the server -->
     <target name="test">
-      <sfc:deployForCI username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="src" runAllTests="true" />
+        <sfc:deployForCI username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="src" />
     </target>
 
-    <target name="clean">
-      <sfc:deployForCI username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="clean" />
-    </target>
 </project>
