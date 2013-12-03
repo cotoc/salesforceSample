@@ -3,10 +3,10 @@
     <property file="build.properties"/>
     <property environment="env"/>
     <target name="test">
-      <sfc:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="src" runAllTests="true" />
+      <sfc:deployForCI username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="src" runAllTests="true" />
     </target>
 
     <target name="clean">
-      <sfc:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="clean" />
+      <sfc:deployForCI username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="clean" />
     </target>
 </project>
