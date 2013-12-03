@@ -1,12 +1,12 @@
-<project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sfc="antlib:com.yutagithub.sforce.ci">
 
     <property file="build.properties"/>
     <property environment="env"/>
     <target name="test">
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="src" runAllTests="true" />
+      <sfc:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="src" runAllTests="true" />
     </target>
 
     <target name="clean">
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="clean" />
+      <sfc:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="clean" />
     </target>
 </project>
